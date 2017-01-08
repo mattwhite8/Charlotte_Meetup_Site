@@ -8,7 +8,6 @@
 </head>
 <body>
 	
-	<div class="container">
 	<header>
 		<nav>
 			<a href="#featured"><span class="subhead">Charlotte Frontend MeetUp</span></a>
@@ -29,29 +28,37 @@
 	</header>
 
 	<div class="main">
-		<div class="page row" id="goal">
-			<div class="col-sm-3">
+		<div class="page" id="goal">
+			<div class="content container">
 				<h2>Our Goal</h2>
-			</div>
-			<div class="col-sm-9">
 				<p>Our goal is to provide anyone with an interest in coding a place to hone their skills.  Our meet ups will be a friendly and open environment where people of all skill levels can come and make meaningful progress towards their goals.</p>
-				<p>Our meet ups will be held in a hackathon style, where groups will work together to create a fun, new application each time.  </p>
-			</div>
+				<p>Our meet ups will be held in a hackathon style, where groups will work together to create a fun, new application each time.</p>
+			</div><!-- content container -->
 		</div><!-- goal page -->
 
 		<div class="page" id="activities">
-			<h2>Activities</h2><!-- Samples of work? -->
-			<article>
-				<img class="icon" src="assets/images/coding.svg" alt="Icon">
-				<h3>Weather App</h3>
-				<p>Together, we will build a working weather app using APIs that will tell you your local weather.</p>
-			</article>
+			<div class="content container">
+				<h2>Activities</h2><!-- Samples of work? -->
+				<div class="row">
+					<article class="acitivity col-sm-4">
+						<img class="icon" src="assets/images/coding.svg" alt="Icon">
+						<h3>Weather App</h3>
+						<p>Together, we will build a working weather app using APIs that will tell you your local weather.</p>
+					</article>
 
-			<article>
-				<img class="icon" src="assets/images/screen-1.svg">
-				<h3>More to come...</h3>
-				<p>Please check back with us to see what we have in store.</p>
-			</article>
+					<article class="activity col-sm-4">
+						<img class="icon" src="assets/images/screen-1.svg">
+						<h3>More to come...</h3>
+						<p>Please check back with us to see what we have in store.</p>
+					</article>
+
+					<article class="activity col-sm-4">
+						<img class="icon" src="assets/images/screen-1.svg">
+						<h3>More to come...</h3>
+						<p>Please check back with us to see what we have in store.</p>
+					</article>
+				</div><!-- row -->
+			</div><!-- content container -->
 		</div><!-- activities page -->
 
 		<div class="page" id="founders">
@@ -71,7 +78,7 @@
 		</div><!-- founders page -->
 
 		<div class="page" id="contact">
-			<h3>This is where we will add our link to google form, or down the road something plugged straight into our page.</h3>
+			<p>This is where we will add our link to google form, or down the road something plugged straight into our page.</p>
 		</div><!-- contact page -->
 	</div><!-- main -->
 
@@ -84,7 +91,6 @@
 		</nav>
 		<p>All contents &copy; 2017 Matt White.  All rights reserved.</p>
 	</footer>
-	</div><!-- container -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
