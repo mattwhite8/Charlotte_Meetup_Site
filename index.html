@@ -4,6 +4,7 @@
 	<title>Charlotte Frontend MeetUp</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
  	<link rel="stylesheet" href="assets/css/style.css">
+ 	<script src="assets/js/prefixfree.min.js"></script>
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -51,8 +52,10 @@
 		<div class="page" id="goal">
 			<div class="content container">
 				<h2>Our Goal</h2>
-				<p>Our goal is to provide anyone with an interest in coding a place to hone their skills.  Our meet ups will be a friendly and open environment where people of all skill levels can come and make meaningful progress towards their goals.</p>
-				<p>Our meet ups will be held in a hackathon style, where groups will work together to create a fun, new application each time.</p>
+				<div class="row">
+					<p class="col-md-5 col-md-offset-1">Our goal is to provide anyone with an interest in coding a place to hone their skills.  Our meet ups will be a friendly and open environment where people of all skill levels can come and make meaningful progress towards their goals.</p>
+					<p class="col-md-5">Our meet ups will be held in a hackathon style, where groups will work together to create a fun, new application each time.</p>
+				</div><!-- row -->
 			</div><!-- content container -->
 		</div><!-- goal page -->
 
@@ -60,19 +63,19 @@
 			<div class="content container">
 				<h2>Activities</h2><!-- Samples of work? -->
 				<div class="row">
-					<article class="acitivity col-sm-4">
+					<article class="activity col-sm-4 col-xs-12">
 						<img class="icon" src="assets/images/coding.svg" alt="Icon">
 						<h3>Weather App</h3>
 						<p>Together, we will build a working weather app using APIs that will tell you your local weather.</p>
 					</article>
 
-					<article class="activity col-sm-4">
+					<article class="activity col-sm-4 col-xs-12">
 						<img class="icon" src="assets/images/screen-1.svg">
 						<h3>More to come...</h3>
 						<p>Please check back with us to see what we have in store.</p>
 					</article>
 
-					<article class="activity col-sm-4">
+					<article class="activity col-sm-4 col-xs-12">
 						<img class="icon" src="assets/images/screen-1.svg">
 						<h3>More to come...</h3>
 						<p>Please check back with us to see what we have in store.</p>
@@ -82,26 +85,42 @@
 		</div><!-- activities page -->
 
 		<div class="page" id="founders">
-			<div class="container">
+			<div class="container-fluid">
 				<h2 id="thefounders">About Us</h2>
 				<div class="row">
-					<div class="founder col-sm-6">
-						<img class="img-circle" src="assets/images/22133869.jpeg" alt="Photo of John Wolfe">
-						<h3>John Wolfe</h3>
-						<p>John, add something about yourself.</p>
+
+
+					<div class="founder col-lg-6">
+						<div class="row">
+							<div class="photo col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-2 col-lg-4 col-lg-offset-0">
+								<img class="img-circle" src="assets/images/22133869.jpeg" alt="Photo of John Wolfe">
+							</div><!-- photo -->
+							<div class="info col-xs-8 col-xs-offset-2 col-sm-7 col-sm-offset-0 col-md-6 col-lg-8">
+								<h3>John Wolfe</h3>
+								<p>John, add something about yourself.</p>
+							</div><!-- info -->
+						</div><!-- inner row -->
 					</div><!-- founder -->
 
-					<div class="founder col-sm-6">
-						<img class="img-circle" src="assets/images/9679628.jpeg" alt="Photo of Matt White">
-						<h3>Matt White</h3>
-						<p>What can I say?  I've loved computers since I could walk and talk.  I can't wait to learn and grow with all of you.</p>
+					<div class="founder col-lg-6">
+						<div class="row">
+							<div class="photo col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-2 col-lg-4 col-lg-offset-0">
+								<img class="img-circle" src="assets/images/9679628.jpeg" alt="Photo of Matt White">
+							</div><!-- photo -->
+							<div class="info col-xs-8 col-xs-offset-2 col-sm-7 col-sm-offset-0 col-md-6 col-lg-8">
+								<h3>Matt White</h3>
+								<p>Matt, add something about yourself.</p>
+							</div><!-- into -->
+						</div><!-- inner row -->
 					</div><!-- founder -->
-				</div><!-- row -->
+
+
+				</div><!-- outer row -->
 			</div><!-- container -->
 		</div><!-- founders page -->
 
 		<div class="page" id="contact">
-			<div class="container">
+			<div class="container-fluid">
 				<h2>Contact Us</h2>
 				<div class="row">
 				<p class="col-sm-12">This is where we will add our link to google form, or down the road something plugged straight into our page.</p>	
