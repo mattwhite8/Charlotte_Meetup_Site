@@ -9,15 +9,27 @@
 <body>
 	
 	<header>
-		<nav>
-			<a href="#featured"><span class="subhead">Charlotte Frontend MeetUp</span></a>
-			<ul>
-				<li><a href="#featured">Home</a></li>
-				<li><a href="#goal">Goal</a></li>
-				<li><a href="#activities">Activities</a></li>
-				<li><a href="#founders">Founders</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+			        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+			        </button>				
+					<a class="navbar-brand" href="#featured"><span class="subhead">Charlotte Frontend MeetUp</span></a>				
+				</div><!-- navbar-header -->
+				<div class="collapse navbar-collapse" id="collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="#featured">Home</a></li>
+						<li><a href="#goal">Goal</a></li>
+						<li><a href="#activities">Activities</a></li>
+						<li><a href="#founders">Founders</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div><!-- collapse navbar-collapse -->
+			</div><!-- container -->
 		</nav>
 
 		<div class="carousel">
@@ -62,34 +74,50 @@
 		</div><!-- activities page -->
 
 		<div class="page" id="founders">
-			<h2 id="thefounders">About Us</h2>
+			<div class="container">
+				<h2 id="thefounders">About Us</h2>
+				<div class="row">
+					<div class="founder col-sm-6">
+						<img class="img-circle" src="assets/images/22133869.jpeg" alt="Photo of John Wolfe">
+						<h3>John Wolfe</h3>
+						<p>John, add something about yourself.</p>
+					</div><!-- founder -->
 
-			<div class="founder">
-				<img class="img-circle" src="assets/images/22133869.jpeg" alt="Photo of John Wolfe">
-				<h3>John Wolfe</h3>
-				<p>John, add something about yourself.</p>
-			</div><!-- founder -->
-
-			<div class="founder">
-				<img class="img-circle" src="assets/images/9679628.jpeg" alt="Photo of Matt White">
-				<h3>Matt White</h3>
-				<p>What can I say?  I've loved computers since I could walk and talk.  I can't wait to learn and grow with all of you.</p>
-			</div><!-- founder -->
+					<div class="founder col-sm-6">
+						<img class="img-circle" src="assets/images/9679628.jpeg" alt="Photo of Matt White">
+						<h3>Matt White</h3>
+						<p>What can I say?  I've loved computers since I could walk and talk.  I can't wait to learn and grow with all of you.</p>
+					</div><!-- founder -->
+				</div><!-- row -->
+			</div><!-- container -->
 		</div><!-- founders page -->
 
 		<div class="page" id="contact">
-			<p>This is where we will add our link to google form, or down the road something plugged straight into our page.</p>
+			<div class="container">
+				<h2>Contact Us</h2>
+				<div class="row">
+				<p class="col-sm-12">This is where we will add our link to google form, or down the road something plugged straight into our page.</p>	
+				</div><!-- row -->		
+			</div><!-- container -->
 		</div><!-- contact page -->
 	</div><!-- main -->
 
 	<footer>
-		<div>Contact us directly at <span class="phone">704-807-9539</span></div>
-		<nav>
-			<ul>
-				<li><a href="#">MeetUp Page</a></li>
-			</ul>
-		</nav>
-		<p>All contents &copy; 2017 Matt White.  All rights reserved.</p>
+		<div class="content container-fluid">
+			<div class="row">
+				<div class="col-sm-6">
+					<p>Contact us directly at <span class="phone">704-807-9539</span></p>
+					<p>All contents &copy; 2017 Matt White.  All rights reserved.</p>	
+				</div><!-- col-sm-6 -->
+				<div class="col-sm-6">
+					<nav class="navbar navbar-default" role="navigation">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#">MeetUp Page</a></li>
+						</ul>
+					</nav>
+				</div><!-- col-sm-6 -->
+			</div><!-- row -->
+		</div><!-- content container -->
 	</footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
