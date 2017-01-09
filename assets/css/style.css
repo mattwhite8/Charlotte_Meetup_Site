@@ -133,7 +133,7 @@ header .inbody .navbar-brand span.subhead {
 
 .carousel.fade .item:first-child {
 	top: auto;
-	opacity: 1;
+	opacity: 0;
 	position: relative;
 }
 
@@ -148,6 +148,14 @@ header .inbody .navbar-brand span.subhead {
 .carousel-control.right, 
 .carousel-control.left {
 	background-image: none;
+}
+
+#featured .item {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 100%;
+	height: 100%;
 }
 
 /*Page*/
