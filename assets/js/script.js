@@ -1,3 +1,30 @@
+// Cardinal Solutions lat/lng: 35.227024, -80.846575
+var map;
+
+var myLatlng = {
+        lat: 35.227024,
+        lng: -80.846575
+    };
+function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: myLatlng
+        });
+        var infowindow = new google.maps.InfoWindow({
+                    content: 'Charlotte Hackathon Address: <br>222 S Church St #500, Charlotte, NC 28202'
+                });
+        var marker = new google.maps.Marker({
+                    position: myLatlng,
+                    map: map,
+                    title: 'Location:'
+                });
+        marker.addListener('click', function() {
+                    infowindow.open(map, marker);
+                });
+      }
+
+
+
 $(function() {
 
   "use strict";

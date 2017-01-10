@@ -79,6 +79,12 @@ header .navbar-default .navbar-toggle .icon-bar {
 	background-color: white;
 }
 
+#map {
+    width: 400px;
+	height: 250px;
+   
+    }
+
 @media only screen and (max-width: 768px){
 	header .navbar-collapse.in {
 		background-color: rgba(0,0,0,.5);
@@ -263,7 +269,13 @@ footer .navbar-nav>li a {
 	color: #EEC856 !important;
 }
 
-
+@media (max-width: 460px){
+	#map {
+	    width: 300px;
+		height: 200px;
+   
+    }
+}
 
 
 

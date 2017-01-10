@@ -27,6 +27,7 @@
 						<li><a href="#goal">Goal</a></li>
 						<li><a href="#activities">Activities</a></li>
 						<li><a href="#founders">Founders</a></li>
+						<li><a href="#location">Location</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</div><!-- collapse navbar-collapse -->
@@ -126,6 +127,24 @@
 			</div><!-- container -->
 		</div><!-- founders page -->
 
+		<!-- INITIALIZING THE MAP -->
+		<div class="page" id="location">
+			<div class="container-fluid">
+				<h2>Location</h2>
+				<div class="row">
+					<div class="col-xs-10 col-sm-6 col-md-5 col-md-offset-1 col-lg-5">
+						<p>Cardinal Solutions Group</p>
+						<p>Address: 222 S Church St #500, Charlotte, NC 28202</p>
+						<p>Special thanks to <strong>Bermon Painter</strong> for letting us host the Meetup and Cardinal!</p>
+					</div>
+					<div class="col-xs-10 col-sm-6 col-md-5 col-lg-5 text-center">
+						<div class='text-center' id="map"></div>
+						
+					</div>
+				</div>
+			</div> <!-- container-fluid -->
+		</div> <!-- page location -->
+
 		<div class="page" id="contact">
 			<div class="container-fluid">
 				<h2>Contact Us</h2>
@@ -157,6 +176,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 <script src="assets/js/script.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUUruju1mgKHGQQyFHqcUFv4VizLypoZw&callback=initMap">
+    </script>
 
 </body>
 </html>
