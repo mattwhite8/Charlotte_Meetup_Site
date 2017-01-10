@@ -82,6 +82,7 @@ header .navbar-default .navbar-toggle .icon-bar {
 #map {
     width: 400px;
 	height: 250px;
+	margin: 0 auto;
    
     }
 
@@ -89,6 +90,7 @@ header .navbar-default .navbar-toggle .icon-bar {
 	header .navbar-collapse.in {
 		background-color: rgba(0,0,0,.5);
 	}
+
 }
 
 /*nav inbody*/
