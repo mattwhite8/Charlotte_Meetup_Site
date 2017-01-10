@@ -229,6 +229,12 @@ header .inbody .navbar-brand span.subhead {
 	width: 100%;
 }
 
+/*Page --- Contact*/
+#contact {
+	background-color: #E4D29D;
+	background-image: linear-gradient(to bottom, #F0F9FF, #CBDBFF);
+}
+
 /*Footer*/
 footer {
 	background: #586D74;
