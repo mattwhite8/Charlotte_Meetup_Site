@@ -1,6 +1,6 @@
 // Cardinal Solutions lat/lng: 35.227024, -80.846575
 
-//firebase information
+//firebase information ###########################
 var config = {
     apiKey: "AIzaSyChAcOSZ_Wm3hUXTNX42uwMTIuRK3oi-yw",
     authDomain: "charlottehackathondata.firebaseapp.com",
@@ -10,6 +10,42 @@ var config = {
   };
 firebase.initializeApp(config);
 
+var database = firebase.database();
+    console.log(database.ref());
+
+    var databaseList = [];
+
+    // Capture Button Click
+    $("#add-user").on("click", function(snapshot) {
+
+      event.preventDefault();
+      // YOUR TASK!!!
+
+      var user = {};
+      user.name = $('#name-input').val().trim();
+      user.age = $('#age-input').val().trim();
+      user.email = $('#email-input').val().trim();
+      user.comment = $('#comment-input').val().trim();
+      // Code in the logic for storing and retrieving the most recent user.
+      databaseList.push(user);
+      database.ref().set(databaseList);
+
+      
+    });
+
+    // Don't forget to handle the "initial load"
+    
+    // Create Firebase "watcher" Hint: .on("value")
+    database.ref().on('value', function(snapshot){
+      console.log(snapshot.val());
+      databaseList = snapshot.val() || [];
+      
+
+      
+
+    }, function(errorObj){
+      console.log('Errors Handled:  ' + errorObj.code);
+    });
 
 
 //initializing google maps API
