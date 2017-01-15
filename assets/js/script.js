@@ -34,8 +34,11 @@ var database = firebase.database();
         $('#age-input').val('');
         $('#email-input').val('');
         $('#comment-input').val('');
+        $("#contact").prepend('<div class="alert alert-info alert-dismissible" role="alert">' +
+        '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' +
+        '<strong>Hey!</strong> Your submission went through!' +
+        '</div>');
       },1000);
-
       
     });
 
