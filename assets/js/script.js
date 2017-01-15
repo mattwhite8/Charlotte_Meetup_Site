@@ -16,7 +16,7 @@ var database = firebase.database();
     var databaseList = [];
 
     // Capture Button Click
-    $("#add-user").on("click", function(snapshot) {
+    $("#add-user").on("click", function() {
 
       event.preventDefault();
       // YOUR TASK!!!
@@ -29,6 +29,12 @@ var database = firebase.database();
       // Code in the logic for storing and retrieving the most recent user.
       databaseList.push(user);
       database.ref().set(databaseList);
+      setTimeout(function(){
+        $('#name-input').val('');
+        $('#age-input').val('');
+        $('#email-input').val('');
+        $('#comment-input').val('');
+      },1000);
 
       
     });
