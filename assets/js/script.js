@@ -1,6 +1,19 @@
 // Cardinal Solutions lat/lng: 35.227024, -80.846575
-var map;
 
+//firebase information
+var config = {
+    apiKey: "AIzaSyChAcOSZ_Wm3hUXTNX42uwMTIuRK3oi-yw",
+    authDomain: "charlottehackathondata.firebaseapp.com",
+    databaseURL: "https://charlottehackathondata.firebaseio.com",
+    storageBucket: "charlottehackathondata.appspot.com",
+    messagingSenderId: "968440978977"
+  };
+firebase.initializeApp(config);
+
+
+
+//initializing google maps API
+var map;
 var myLatlng = {
         lat: 35.227024,
         lng: -80.846575
@@ -22,9 +35,10 @@ function initMap() {
                     infowindow.open(map, marker);
                 });
       }
+//##########################END OF MAP API#######################
 
 
-
+//document ready / onload
 $(function() {
 
   "use strict";
