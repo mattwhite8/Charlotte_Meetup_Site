@@ -249,7 +249,7 @@ footer a {
 	color: #E0E6AE;
 }
 
-footer a:hoover {
+footer a:hover {
 	color: #EEC856 !important;
 }
 
