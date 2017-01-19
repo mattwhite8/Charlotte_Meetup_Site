@@ -11,9 +11,9 @@ var config = {
 firebase.initializeApp(config);
 
 var database = firebase.database();
-    console.log(database.ref());
+    
 
-    var databaseList = [];
+    var databaseList = database.ref('/feedback');
 
     // Capture Button Click
     $("#add-user").on("click", function() {
@@ -47,7 +47,7 @@ var database = firebase.database();
     // Create Firebase "watcher" Hint: .on("value")
     database.ref().on('value', function(snapshot){
       console.log(snapshot.val());
-      databaseList = snapshot.val() || [];
+      
       
 
       
