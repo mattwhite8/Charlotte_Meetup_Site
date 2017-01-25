@@ -96,6 +96,10 @@ header .navbar-default .navbar-toggle .icon-bar {
 }
 
 #weather-app-popup:hover {
+	cursor: default;
+}
+
+#glyphicon-popup-close:hover {
 	cursor: pointer;
 }
 

@@ -172,11 +172,13 @@ $(function() {
   weatherApp.on('click', function(){
     //function to initiate pop up div for weather app
     $('#weather-app-popup').removeClass('hidden');
-    
+    $(this).addClass('hidden');
+
   });
 
-  $(document).on('click', function(){
+  $('#glyphicon-popup-close').on('click', function(){
     $('#weather-app-popup').addClass('hidden');
+    $('#weather-app').removeClass('hidden');
   });
 
 });
