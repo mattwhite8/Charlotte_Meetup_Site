@@ -95,12 +95,17 @@ header .navbar-default .navbar-toggle .icon-bar {
 
 }
 
+#weather-app-popup ul a {
+	color: #EEC856 !important;
+}
+
 #weather-app-popup:hover {
 	cursor: default;
 }
 
 #glyphicon-popup-close:hover {
 	cursor: pointer;
+	color: #EEC856 !important;
 }
 
 @media only screen and (max-width: 768px){
