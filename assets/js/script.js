@@ -19,7 +19,6 @@ var database = firebase.database();
     $("#add-user").on("click", function() {
 
       event.preventDefault();
-      // YOUR TASK!!!
 
       var user = {};
       user.name = $('#name-input').val().trim();
@@ -166,6 +165,18 @@ $(function() {
 
   $('.carousel').carousel({
     pause: false
+  });
+
+  //click event for pop up div on weatherApp activity
+  var weatherApp = $('#weather-app');
+  weatherApp.on('click', function(){
+    //function to initiate pop up div for weather app
+    $('#weather-app-popup').removeClass('hidden');
+    
+  });
+
+  $(document).on('click', function(){
+    $('#weather-app-popup').addClass('hidden');
   });
 
 });

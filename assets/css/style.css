@@ -86,6 +86,19 @@ header .navbar-default .navbar-toggle .icon-bar {
    
     }
 
+/* Weather App Popup Div */
+#weather-app-popup {
+	width: 320px;
+	height: 250px;
+	background-color: rgba(0, 0, 0, .7);
+	color: #CBDBFF;
+
+}
+
+#weather-app-popup:hover {
+	cursor: pointer;
+}
+
 @media only screen and (max-width: 768px){
 	header .navbar-collapse.in {
 		background-color: rgba(0,0,0,.5);
@@ -187,6 +200,12 @@ header .inbody .navbar-brand span.subhead {
 .activity {
 	margin: 20px 0;
 	text-align: center;
+}
+
+.activity:hover {
+	cursor: pointer;
+	background-color: rgba(0,0,0,.3);
+	border-radius: 5px;
 }
 
 #activities img.icon {
