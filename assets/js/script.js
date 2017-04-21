@@ -11,15 +11,14 @@ var config = {
 firebase.initializeApp(config);
 
 var database = firebase.database();
-    console.log(database.ref());
+    
 
-    var databaseList = [];
+    var databaseList = database.ref('/feedback');
 
     // Capture Button Click
     $("#add-user").on("click", function() {
 
       event.preventDefault();
-      // YOUR TASK!!!
 
       var user = {};
       user.name = $('#name-input').val().trim();
@@ -34,7 +33,7 @@ var database = firebase.database();
         $('#age-input').val('');
         $('#email-input').val('');
         $('#comment-input').val('');
-        $("#contact").prepend('<div class="alert alert-info alert-dismissible" role="alert">' +
+        $("#contact").prepend('<div class="alert alert-success alert-dismissible" role="alert">' +
         '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' +
         '<strong>Hey!</strong> Your submission went through!' +
         '</div>');
@@ -47,7 +46,7 @@ var database = firebase.database();
     // Create Firebase "watcher" Hint: .on("value")
     database.ref().on('value', function(snapshot){
       console.log(snapshot.val());
-      databaseList = snapshot.val() || [];
+      
       
 
       
@@ -166,6 +165,20 @@ $(function() {
 
   $('.carousel').carousel({
     pause: false
+  });
+
+  //click event for pop up div on weatherApp activity
+  var weatherApp = $('#weather-app');
+  weatherApp.on('click', function(){
+    //function to initiate pop up div for weather app
+    $('#weather-app-popup').removeClass('hidden');
+    $(this).addClass('hidden');
+
+  });
+
+  $('#glyphicon-popup-close').on('click', function(){
+    $('#weather-app-popup').addClass('hidden');
+    $('#weather-app').removeClass('hidden');
   });
 
 });

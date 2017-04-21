@@ -32,6 +32,7 @@
                         <li><a href="#founders">Founders</a></li>
                         <li><a href="#location">Location</a></li>
                         <li><a href="#contact">Contact</a></li>
+                        <li><a href="https://charlottehackathon.slack.com/shared_invite/MTQzOTY2NTY1NTg0LTE0ODc3MjYxNjktMGI2OTcwZWFlMg">Slack Channel</a></li>
                     </ul>
                 </div>
                 <!-- collapse navbar-collapse -->
@@ -63,6 +64,7 @@
                 <div class="row">
                     <p class="col-md-5 col-md-offset-1">Our goal is to provide anyone with an interest in coding a place to hone their skills. Our meet ups will be a friendly and open environment where people of all skill levels can come and make meaningful progress towards their goals.</p>
                     <p class="col-md-5">Our meet ups will be held in a hackathon style, where groups will work together to create a fun, new application each time.</p>
+
                 </div>
                 <!-- row -->
             </div>
@@ -74,7 +76,18 @@
                 <h2>Activities</h2>
                 <!-- Samples of work? -->
                 <div class="row">
-                    <article class="activity col-sm-4 col-xs-12">
+                    <div id="weather-app-popup" class='hidden activity col-sm-4 col-xs-12'>
+                        <h3><strong><u>Weather App Info: </u></strong><span class="glyphicon glyphicon-remove-circle pull-right" id='glyphicon-popup-close' aria-hidden="true"></span></h3>
+                        <ul>
+                            <a href='https://openweathermap.org/'><li>Weather APIs</li></a>
+                            <a href="https://developers.google.com/maps/documentation/javascript/"><li>Google Maps API</li></a>
+                            <a href='https://github.com/wolfejw86/weather-clicker'><li>Github Link to Example</li></a>
+                            <a href='https://www.freecodecamp.com/challenges/show-the-local-weather'><li>User Story Example</li></a>
+                            <a href='https://www.freecodecamp.com'><li>Free Code Camp Exercises</li></a>
+                            <a href='https://dev.twitter.com/docs'><li>**Bonus: User can Tweet Current Weather</li></a>
+                        </ul>
+                    </div>
+                    <article class="activity col-sm-4 col-xs-12" id='weather-app'>
                         <img class="icon" src="assets/images/coding.svg" alt="Icon">
                         <h3>Weather App</h3>
                         <p>Together, we will build a working weather app using APIs that will tell you your local weather.</p>
@@ -192,7 +205,7 @@
         <div class="content container-fluid">
             <div class="row">
                 <div class="col-sm-6">
-                    <p>Contact us directly at <span class="phone">704-807-9539</span></p>
+                    <p>Contact us directly at <span class="phone"><a href='tel:7048079539'>704-807-9539</a></span></p>
                     <p>All contents &copy; 2017 <a href='mailto:matthew.white697@gmail.com'>Matt White</a> and <a href='mailto:wolfejw86@gmail.com'>John Wolfe</a>. All rights reserved.</p>
                 </div>
                 <!-- col-sm-6 -->
